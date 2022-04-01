@@ -25,10 +25,7 @@
   bind:clientHeight={headerHeight}
   class="bg-white flex py-5 px-6 items-center sm:border-b sm:border-b-blue-92 md:py-8 lg:px-0">
   <div class="flex mr-4 sm:hidden">
-    <button
-      on:click={showMenu}
-      aria-expanded={isMenuVisible}
-      aria-controls="navigation">
+    <button on:click={showMenu} aria-expanded={isMenuVisible}>
       <span class="sr-only">Show menu</span>
       <IconMenu />
     </button>
