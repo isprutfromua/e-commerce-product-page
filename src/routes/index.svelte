@@ -16,13 +16,13 @@
 
 <svelte:window bind:innerWidth={windowWidth} />
 
-<div class="lg:container lg:mx-auto lg:relative">
+<main class="lg:container lg:mx-auto lg:relative">
   <Header />
   <Product
     on:click={() => {
       isLightBoxVisible = true;
     }} />
-</div>
+</main>
 
 {#if windowWidth > 1024 && isLightBoxVisible}
   <LightBox

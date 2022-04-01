@@ -23,6 +23,7 @@
   }
 </script>
 
+<h1 class="sr-only">Product page</h1>
 <div class="flex flex-col <lg:p-6">
   <p class="font-bold mb-6 text-orange-55 uppercase">Sneaker company</p>
   <h2 class="font-bold text-black mb-8 text-5xl ">
@@ -47,6 +48,7 @@
         on:click={() => {
           if (productCount >= 1) productCount--;
         }}>
+        <span class="sr-only">Decrease quantity</span>
         <IconMinus />
       </button>
       <span class="font-bold text-black">{productCount}</span>
@@ -55,6 +57,7 @@
         on:click={() => {
           productCount++;
         }}>
+        <span class="sr-only">Increase quantity</span>
         <IconPlus />
       </button>
     </div>
