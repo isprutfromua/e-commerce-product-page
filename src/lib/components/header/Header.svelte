@@ -67,7 +67,7 @@
 
   <CartButton on:click={() => ($isCartVisible = !$isCartVisible)} />
 
-  <a href="/user" class="flex" aria-label="User profile">
+  <a href={"#"} class="flex" aria-label="User profile">
     <img
       src="images/user.webp"
       alt="User"

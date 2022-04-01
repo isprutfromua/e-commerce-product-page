@@ -1,4 +1,4 @@
-import adapter from "@sveltejs/adapter-auto";
+import adapter from "@sveltejs/adapter-static";
 import preprocess from "svelte-preprocess";
 import { windi } from "svelte-windicss-preprocess";
 
@@ -7,7 +7,14 @@ const config = {
   preprocess: [preprocess(), windi({})],
 
   kit: {
-    adapter: adapter(),
+    adapter: adapter({
+      pages: "public",
+      assets: "public",
+      precompress: false,
+    }),
+    prerender: {
+      default: true,
+    },
   },
 };
 
